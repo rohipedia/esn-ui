@@ -1,0 +1,50 @@
+<div class=" col-md-12 col-sm-12">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-9 col-xs-12">
+      <span for="">ESN availability in system</span>
+      <!-- <div style="display: block">
+        <canvas baseChart 
+          [data]="pieChartData" 
+          [labels]="pieChartLabels" 
+          [chartType]="pieChartType" 
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div> -->
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-9 col-xs-12">
+      <div class="esn-details">
+        <label>ESN last imported on</label>
+        <span>: {{ data.esnLastImported | date: 'dd/MM/yyyy' }}</span>
+      </div>
+      <div class="esn-details">
+        <label>ESN last validated on</label>
+        <span>: {{ data.esnLastValidated | date: 'dd/MM/yyyy' }}</span>
+      </div>
+      <div class="esn-details">
+        <label>Number of ESNs last pulled</label>
+        <span>: {{ data.totalESNLastPulled }}</span>
+      </div>
+      <div class="esn-details">
+        <label>Available Valid ESN</label>
+        <span>: {{ data.totalAvailableValidESNs }}</span>
+      </div>
+      <div class="esn-details">
+        <label>Minimum ESN threshold</label>
+        <span>: {{ data.totalclaimedESNs }}</span>
+      </div>
+    </div>
+    <div class="col-md-2 col-md-2 col-sm-12 col-xs-12 action-buttons">
+      <div>
+        <button class="btn btn-primary btn-block">Manage Users</button>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-block">Import ESNs</button>
+      </div>
+      <div>
+        <button class="btn btn-primary btn-block">Validate ESNs</button>
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
